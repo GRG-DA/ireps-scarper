@@ -1,0 +1,643 @@
+
+
+	
+	
+	
+	
+			 
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<html lang="en">
+<head>
+<meta name="description" content="Indian Railways eProcurement Systems">
+<meta name="keywords" content="Search Railways e-tender,Search Railways Supply tender,Search Railways Works tender,Search Railways e-auction tender,Indian Railways works tender,Indian Railways goods tender,Indian Railways services tender,Indian Railways supply tender,Indian Railways e-tender,Indian Railways e-auction,Railway Board tender,Railway Board e-tender,eProcurement,e-Procurement,Indian Railways,cris">
+<title>View NIT</title>
+<link rel="shortcut icon" href="/ireps/images/common/favicon.ico" type="image/x-icon"> 
+<LINK href="/ireps/images/common/favicon.ico" type="image/vnd.microsoft.icon" rel="shortcut icon">
+<LINK href="/ireps/images/common/favicon.ico" type="image/vnd.microsoft.icon" rel="icon">
+<link rel="stylesheet" type="text/css" href="/ireps/css/irepsCommonCss.css">
+<script language="javascript" src="/ireps/pki/CRISPKI.js"></script>
+<script type="text/javascript" src="/ireps/js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="/ireps/js/works/postRequest.js"></script>
+</head>
+
+<body>
+
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="background-color:#ffffff;" class="table_br">
+  <tr valign="top"> 
+    <td colspan="3" height="75" width="100%">
+		
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha384-/o6I2CkkWC//PSjvWC/eYN7l3xM3tJm8ZzVkCOfp//W05QcE3mlGskpoHB6XqI+B" crossorigin="anonymous">
+
+<script src="https://cdn.ux4g.gov.in/tools/accessibility-widget.js" integrity="sha384-419MfWzsRfYF7SIkBaHGUOahD9+c4R5PsHwlx/eOlSVQKAEC6nh7lPMHhXAVLcpB" crossorigin="anonymous"></script>
+
+<style type="text/css">
+.epsLabel {
+	font-size: 33px;
+	/* font-family: Cambria; */
+	font-weight: normal;
+	letter-spacing: 2px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+.small-text{
+color:white}
+.small-text:hover {
+    color: red;
+}
+	
+</style>
+<style>
+.gradientClass{
+background: #07222E;
+font-family: 'Adobe Garamond Pro', sans-serif;
+ 
+}
+
+
+
+
+        .custom-select option {
+            color: black;
+        }
+     
+  .custom-select {
+            margin-right: 30px;
+            border: 0px;
+            width: 220px;
+            background-color: transparent;
+            color: white;
+            height: 45px;
+            -webkit-appearance: none; 
+            -moz-appearance: none; 
+            appearance: none; 
+        }
+
+        .custom-select option {
+            color: black;
+        }
+        .small-text{
+			color:white;
+			font-weight: normal;
+			font-family: 'Adobe Garamond Pro', sans-serif;
+			text-transform: capitalize;
+		}
+	#mainHr {
+    margin-top: -4px;
+    margin-bottom: 0rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+
+
+    .controls { display: flex; align-items: center; gap: .5rem; }
+.btn1 {
+border: 1px solid rgba(255,255,255,.35); color: #fff; padding: 4px 6px; border-radius: 8px; cursor: pointer; background-color:transparent; font: inherit;
+}
+
+.btn1:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important; /* Highlight on hover */
+  border-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+
+
+
+:root {
+    --app-font-size: 14px;
+}
+
+/* Font size - Apply to ALL elements */
+*, *::before, *::after {
+    font-size: var(--app-font-size) ;
+}
+
+/* Dark theme styles */
+.dark-theme {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+.dark-theme body,
+.dark-theme div,
+.dark-theme span,
+.dark-theme p,
+.dark-theme td,
+.dark-theme th,
+.dark-theme label {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+.dark-theme input,
+.dark-theme textarea,
+.dark-theme select,
+.dark-theme button {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+    border-color: #555555 !important;
+}
+
+.dark-theme table,
+.dark-theme .table {
+    background-color: #1a1a1a;
+    color: #ffffff !important;
+}
+
+.dark-theme table td,
+.dark-theme table th,
+.dark-theme .table td,
+.dark-theme .table th {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+    border-color: #555555 !important;
+}
+
+
+
+.dark-theme button,
+.dark-theme input[type="button"],
+.dark-theme input[type="submit"],
+.dark-theme .btn {
+    background-color: #444444 !important;
+    color: #ffffff !important;
+    border-color: #666666 !important;
+}
+
+</style>
+<script>
+var currentSize = 14;   // default font size in px
+var maxClicks = 4;      // maximum allowed A+ or A- clicks
+var clicks = 0;         // counter
+function changeFontSize(action) {
+		
+	   if (action === 'increase' && clicks < maxClicks) {
+	     currentSize += 2;
+	     clicks++;
+	   } else if (action === 'decrease' && clicks > -maxClicks) {
+	     currentSize -= 2;
+	     clicks--;
+	   } else if (action === 'reset') {
+	     currentSize = 14;
+	     clicks = 0;   // reset click count
+	   }
+
+	   document.documentElement.style.setProperty('--app-font-size', currentSize + 'px');
+	    localStorage.setItem('fontSize', currentSize);
+// Ensure nav grows correctly
+	   document.querySelectorAll('.container-fluid-custompadding.gradientClass').forEach(function(el){
+	     el.style.height = 'auto';
+	     el.style.minHeight = '45px';
+	   });
+
+	 }
+
+/* function changeFontSize(action) {
+    let currentSize = parseFloat(localStorage.getItem('fontSize')) || 14;
+    
+    switch(action) {
+        case 'increase': currentSize = Math.min(currentSize + 2, 24); break;
+        case 'decrease': currentSize = Math.max(currentSize - 2, 12); break;
+        case 'reset': currentSize = 14; break;
+}
+
+    document.documentElement.style.setProperty('--app-font-size', currentSize + 'px');
+    localStorage.setItem('fontSize', currentSize);
+    
+    // Force refresh layout for buttons and tables
+    const buttons = document.querySelectorAll('button, input[type="button"], input[type="submit"]');
+    buttons.forEach(btn => btn.style.display = 'none');
+    setTimeout(() => buttons.forEach(btn => btn.style.display = ''), 1);
+} */
+function toggleDarkMode() {
+    const html = document.documentElement;
+    const body = document.body;
+    const isDark = html.classList.toggle('dark-theme');
+    body.classList.toggle('dark-theme', isDark);
+
+    document.getElementById('darkModeBtn').textContent = isDark ? 'Light' : 'Dark';
+
+    localStorage.setItem('darkMode', isDark);
+}
+
+// **MODIFIED: Reset font size on page refresh**
+window.addEventListener('load', function() {
+    // ALWAYS reset font size to default on page refresh
+    document.documentElement.style.setProperty('--app-font-size', '14px');
+    localStorage.setItem('fontSize', '14');
+
+    // Only preserve dark mode setting
+    const darkMode = localStorage.getItem('darkMode') === 'true';
+    if (darkMode) {
+        document.documentElement.classList.add('dark-theme');
+        document.body.classList.add('dark-theme');
+        const btn = document.getElementById('darkModeBtn');
+        if (btn) btn.textContent = 'Light';
+    }
+});
+</script>
+<body>				
+ <table class="gradientClass"  width="100%">
+	<tr><td>&nbsp;</td></tr>
+
+	<tr>
+	                   
+		<td width="20%"><img src="/ireps/images/gem-new-logo-v6.png" style="margin-left:40px;width:350px;height:auto;" alt="Government eMarketplace (IREPS) logo"/></td>
+		
+		<td width="60%" align="center">
+		<div style="color:white; font-family: 'Adobe Garamond Pro', sans-serif; font-size:27px;    line-height: 1.2;">
+ 			Government eMarketplace <br>
+			<font style="color: gold;font-size:27px;">Indian Railways E-Procurement System</font>
+		</div>
+		</td>
+	    <td align="center" width="20%">
+			
+			
+            <div class="controls" aria-label="Display controls" style="display:flex; justify-content: flex-end; gap:5px;margin-right:70px;">
+                <button class="btn1" id="fontDec" title="Decrease font size" onclick="changeFontSize('decrease')">A -</button>
+                <button class="btn1" id="fontReset" title="Reset font size" onclick="changeFontSize('reset')">A</button>
+                <button class="btn1" id="fontInc" title="Increase font size" onclick="changeFontSize('increase')">A +</button>
+                 <button class="btn1" id="themeToggle" title="Toggle dark/light" onclick="toggleDarkMode()">  &#x1F319; / &#x2600;</button>
+           </div>&nbsp;
+           <div class="right-section">
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                          <label for="language" style="color:white;">Select Your Language</label>
+                                                <!--  REQUIRED for BHASHINI PLUGIN -->
+						    <div class="bhashini-plugin-container"></div>
+						                        </div>
+						           
+        
+		</td>	
+		
+    </tr>
+    	<!-- <tr>
+		<td style="margin-left:40px;width:350px;height:auto; " width="100%" colspan="3">
+	       <div style="width: 20%; text-align: right;">
+            <div class="controls" aria-label="Display controls" style="display:flex; justify-content: flex-end; gap:5px;">
+                <button class="btn1" id="fontDec" title="Decrease font size" onclick="changeFontSize('decrease')">A -</button>
+                <button class="btn1" id="fontReset" title="Reset font size" onclick="changeFontSize('reset')">A</button>
+                <button class="btn1" id="fontInc" title="Increase font size" onclick="changeFontSize('increase')">A +</button>
+                 <button class="btn1" id="themeToggle" title="Toggle dark/light" onclick="toggleDarkMode()">  &#x1F319; / &#x2600;</button>
+           </div>
+        </div>
+		</td>
+	</tr> -->
+	<tr height="16px"><td>&nbsp;</td></tr>
+	
+</table>
+</body>
+<hr style="color:#4A4A4A;" id="mainHr">
+	</td>
+  </tr>
+  <tr>
+    <td colspan="3" height="20">
+		
+<head>
+<link rel="stylesheet" type="text/css" href="/ireps/css/menuStyle.css">
+<link rel="stylesheet" href="/ireps/js/newJS/fontawesome/css/fontawesome.css">
+<link href="/ireps/js/newJS/fontawesome/css/brands.css" rel="stylesheet">
+<link href="/ireps/js/newJS/fontawesome/css/solid.css" rel="stylesheet">
+
+<script type="text/javascript" src="/ireps/js/newJS/fontawesome/js/fontawesome.js"></script>
+<script type="text/javascript" src="/ireps/js/newJS/fontawesome/js/brands.js"></script>
+<script type="text/javascript" src="/ireps/js/newJS/fontawesome/js/solid.js"></script>
+<script type="text/javascript">
+var proto="https:";
+var hostadd=window.location.host;
+var linkUrl;
+/*-----------------------------Added by Aastha---------------------------------*/
+var res = hostadd.substring(0,3);
+var context = "eps";
+if(res!='www') 
+{
+	linkUrl=proto+"//www." +hostadd + "/";   
+}
+if((hostadd=="10.60.200.142") || (hostadd=="203.176.113.40"))
+{
+	linkUrl=proto+"//" +hostadd + "/";
+}
+else 
+	linkUrl=proto+"//" +hostadd + "/";
+
+function home1() 
+{
+	window.document.location.href=linkUrl+"ireps.html";
+}
+</script>
+<style>
+
+#wrapper1 {
+    background: #07222E;
+	font-family: 'Adobe Garamond Pro', sans-serif;
+    width: 100%;
+    height: 30px;
+}
+
+</style>
+<script>
+		function showHelpDeskQueryPage()
+		{
+		    window.open(linkUrl+'html/helpdesk/helpdesk.html');
+		}
+		</script>				
+</head>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	  		<tr>
+			   <td colspan="2" height="40">
+			   		<div id="wrapper1" >	
+						<ul style="list-style-type: none; padding: 0; margin: 0;">
+							<li style="background-color:transparent;line-height:30px; padding:0 50px; margin:0 2px; color:white; text-decoration:none;display:block;"><a href="javascript:home1();" style="color:white;"><i class="fa fa-home" style="font-size:27px;color:white;"></i></a>
+									<a style="float:right;color:white;font-size: 25px;" title="contact helpdesk" href="javascript:showHelpDeskQueryPage()" rel="noopener noreferrer" ><i class="fas fa-phone mt-1"></i></a>
+							</li>
+						</ul>
+					</div>
+				</td>
+			</tr>
+    </table>&nbsp;
+	</td>
+  </tr>
+  <tr> 
+    <td colspan="3" height="25" width="100%" >
+		
+	</td>
+  </tr>
+  <tr> 
+ 	
+    <td rowspan="1" width="12%" valign="top" >
+		
+	</td>
+    <td width="73%" valign="top" align="center" >
+			
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/ireps/css/irepsCommonCss.css">
+<script src="/ireps/js/works/postRequest.js"></script>
+
+<head>
+<style> 
+	.styled-button-2 {
+		-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+		-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+		box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+		border-bottom-color:#333;
+		border:1px solid #61c4ea;
+		background-color:#7cceee;
+		border-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		color:#333;
+		font-family:'Verdana',Arial,sans-serif;
+		font-size:14px;
+		text-shadow:#b2e2f5 0 1px 0;
+		padding:5px;
+		width: 170px;
+		cursor: pointer;
+	}
+	.styled-button-8 {
+		background: #25A6E1;
+		/* padding:3px 3px; */
+		padding-top:8px;
+		padding-bottom:8px;
+		color:#fff;
+		font-size:12px;
+		border:1px solid #1A87B9;
+		width: 170px;
+		/* height:auto; */
+		cursor: pointer;
+		border-radius:4px;
+		filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#25A6E1',endColorstr='#188BC0',GradientType=0);
+		 -moz-border-radius:4px;
+		 -webkit-border-radius:4px; 
+		 text-align:center;
+		 vertical-align:middle;
+		 
+		height: 40px;
+		float: left;
+		margin-left: 10px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}   
+	.styled-button-8 a{
+		color: #FFFFFF;
+		 text-align:center;
+		 vertical-align:middle;
+		
+	}
+</style>
+</head>
+<div align="center">
+	<table width="100%" border="0" align="left" cellpadding="0"	cellspacing="0" class="table_bg">
+		<tr>
+			<td align="left" valign="top" height="360"><BR>
+				<div id="content">
+					<table width="100%" border="0" align="center" class="advSearch">
+						<tr>
+	       					<td align="center">
+	       						<TABLE border = "0"  class="advSearch" width = "98%">
+									<TR>
+										<TD width="7%"  class = "formLabel">Tender No:&nbsp;</TD>
+										<TD width="10%" class = "dataText">87266137</TD>  
+										<TD width="6%"  class = "formLabel">Dept/Rly:&nbsp;</TD>
+										<TD width="25%" class = "dataText">RAJKOT/WESTERN RLY</TD>
+										<TD width="12%" class = "formLabel">Closing Date/Time:&nbsp;&nbsp;</TD>
+										<TD width="10%" class = "dataText">11/11/2026 11:00</TD>
+									</TR>
+									<tr><td>&nbsp;</td></tr>
+									
+									
+									<TR>
+										<TD class = "formLabel">Tender Title:</TD>
+									
+										<TD colspan= "3" width = "100%" >
+										<span class = "dataText">Free standing partition panel</span>
+	
+										</TD>
+										<TD class = "formLabel">Tender Type:</TD>
+										<TD class = "dataText">Limited</TD>
+									</TR>
+									<tr><td>&nbsp;</td></tr>
+								</TABLE> 
+								<TABLE border = "0"  class="advSearch" width = "98%">	
+									<TR>
+										<TD class = "formLabel" width="10%">Tender Status</TD>
+										<TD class = "dataText" colspan="3" align="left">
+											Tender Opened
+										</TD>
+									</TR>	
+								</TABLE> 
+							</td>
+						</tr>
+						<!-- <tr>
+							<td align="left" valign="top" class="formLabel" style="font-size: 13px;font-weight: bold;padding-left: 10px;">
+								Please click on the appropriate link to view/download the required information. 
+							</td>
+						</tr> -->
+						
+						<tr>
+							<td valign="top">
+								
+								<TABLE border = "0" width = "98%" style="height: 100%" >
+									<tr height="5%">
+										<td style="padding-left: 5px;" width="100%" align="center" valign="top">
+											<!-- Interactive view -->
+											<div class="styled-button-8" onclick="downloadtenderDoc();"><a href="#">Download Tender Doc. (Pdf)</a></div>
+										</td>
+									</tr>	
+								</table>	
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table width="97.5%" class="advSearch" cellspacing="10">    
+									<tr height = "22" >
+										<td style="padding-left: 5px;" class="dataText">
+											<b>List of documents attached with the tender</b>
+										</td>
+									</tr>
+					 				<tr>
+					 					<td>
+	 										<table border="1" bordercolor="#BBD5E8" cellspacing="1" width="100%" align="center" id="attach_docs" style="border-collapse: collapse;">
+												<tr height="24" align="center" >
+													<td width="5%" class="formLabel" align="center" style="background-color: #DAEEF3;">S.No</td>
+													<td width="25%" align="center" class="formLabel" style="background-color: #DAEEF3;">File Name</td>
+													<td width="60%" align="center" class="formLabel" style="background-color: #DAEEF3;">Document Description</td>						
+												</tr>
+												
+													<tr><td class="dataText" colspan="3" align="center">No Document Attached</td></tr>
+												
+												
+													
+														
+											</table>	
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table id = "cor" width="97.5%" class="advSearch" cellspacing="10"> 
+									<tr height = "22">
+										<td colspan = "2" style="background-color: #DAEEF3;padding-left: 5px; "><b>Corrigenda</b></td>
+									</tr>
+									<tr>
+										<td class="formLabel"  width ="99%" >Details of corrigendum are shown below. However, data/details in NIT/Tender document is updated duly incorporating all  corrigenda issued.</td><td>&nbsp;</td></tr>
+								 	<tr>
+										<td colspan = "2">
+											<table id="tempTable" width="100%" border="1" cellpadding="10" cellspacing="0" bordercolor="#BBD5E8" align="center" style="border-collapse: collapse;">
+												<tr  align="center" height="24">
+													<td width = "5%" class="formLabel" style="background-color: #DAEEF3;">S.No</td>
+													<td width = "45%" class="formLabel" style="background-color: #DAEEF3;">Name</td>
+													<td width = "25%" class="formLabel" style="background-color: #DAEEF3;">Date/Time</td>
+													<td width = "25%" class="formLabel" style="background-color: #DAEEF3;">Action</td>
+												</tr>
+												
+													<tr>
+														 <td class="dataText" style="padding-left:5px;">1	</td>
+														 <td class="dataText" style="padding-left:5px;">Corrigendum 1</td>
+														 <td class="dataText" style="padding-left:5px;">2026-11-07 15:38:56.0	</td>
+														 <td class="dataText" style="padding-left:5px;">
+															<a onclick="showPubCorriDetail('5606651','1210951','1','PT');" href="#"><img height="20" title="Click here to view Published Corrigendum" alt="Click here to view Published Corrigendum" src="/ireps/images/common/viewCorrig.png" border="0"></a>
+														</td>
+													</tr>
+												
+												
+											</table>
+		  								</td>
+		  							</tr>
+								</table>		
+								
+							</td>
+						</tr>				
+					</table>	
+				</div>
+			</td>
+		</tr>		
+	</table>
+</div>	
+<script>
+	
+	
+	function showPubCorriDetail(nitId,corrigId,cn,workArea)
+	{  
+	var url="";
+	if(workArea=="PT") { 
+	url = '/epsn/supply/viewCorrigendum.do?activity=displayPubCorri&nitId='+nitId+'&cn='+cn+'&corrigendumId='+corrigId;     
+	}else{
+	url = '/epsn/works/rfq/viewCorrigendum.do?activity=displayPubCorri&nitId='+nitId+'&cn='+cn+'&corrigendumId='+corrigId;	
+	}		
+		
+		postRequestNewWindow1(url,'scrollbars=yes, resizable=yes,left=100,top=10,width=900, height=600');		
+	}
+
+	function downloadtenderDoc(){
+
+		var url='/ireps/supply/pdfdocs/112026/107232321/viewNitPdf_5606651.pdf';
+		openWindow(url);	
+	}
+	
+	function openWindow(url){
+		//alert(url);
+		window.open(url,'','scrollbars=yes, resizable=yes,left=100,top=10,width=900, height=600');	
+	}
+</script>
+	</td>
+    <td width="15%" valign="top" >
+		
+	</td>
+  </tr>
+  <tr> 
+    <td height="30" colspan="3" width="100%">
+		
+
+<style>
+.topStrip1{
+   background: #07222E;
+	font-family: 'Adobe Garamond Pro', sans-serif;
+    width: 100%;
+    height: 30px;
+}
+
+</style>
+<table width="100%"  style="padding-top:2px;" class="topStrip1">
+
+
+		<tr>
+		<td width="30%" height="33" valign="middle" style="padding: 2px; padding-bottom: 0px;">
+    <!---<A  HREF="https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=www.ireps.gov.in&lang=en" TARGET="_blank" rel="noopener noreferrer">
+        <IMG SRC="/ireps/images/common/verisign.jpg" BORDER="0"></A>-->
+    <A HREF="http://cris.org.in/" target="_blank" rel="noopener noreferrer"><font color="white">Developed by CRIS</font></A>&nbsp;&nbsp;Mem04
+</td>
+
+<td width="70%" height="33" style="padding: 2px;">
+    <div align="right">
+        <a href="/ireps/upload/resources/AboutUs.pdf" target="_blank" rel="noopener noreferrer"><font color="white">About IREPS</font></a> |
+        <a href="/ireps/upload/resources/Disclamier_en.pdf" target="_blank" rel="noopener noreferrer"><font color="white">Disclaimer</font></a> |
+        <a href="/ireps/upload/resources/PrivacyPolicy.pdf" target="_blank" rel="noopener noreferrer"><font color="white">Privacy Statement</font></a> |
+        <a href="http://rti.railnet.gov.in/" target="_blank" rel="noopener noreferrer"><font color="white">RTI </font></a> |
+        <a href="/ireps/upload/resources/TermsAndCondition.pdf" target="_blank" rel="noopener noreferrer"><font color="white">Terms & Conditions</font></a> |
+        <a href="/ireps/upload/resources/Copyright.pdf" target="_blank" rel="noopener noreferrer"><font color="white">CopyRight </font></a>
+        
+        &nbsp;&nbsp;&nbsp;
+    </div>
+</td>
+
+
+</tr>
+</table>
+	</td>
+  </tr>
+</table>
+</body>
+</html>
